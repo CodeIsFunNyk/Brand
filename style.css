@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    position: relative;
+    background-color: #eee;
+}
+#page1 {
+    width: 100%;
+    height: 100vh;
+}
+#nav {
+    width: 100%;
+    height: 10vh;
+    padding: 1vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#nav h2 {
+    font-family: 'Gajraj One', sans-serif;
+    font-size: 2vw;
+    font-stretch: ultra-expanded;
+    font-weight: 800;
+}
+#nav #logo i {
+    font-size: 2vw;
+
+}
+#brandContainer {
+    border: 1px solid red;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform-origin: top left;
+    transition: all ease 3s;
+}
+#imgContainer {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 400px;
+    height: 600px;
+     transform: translate(-50%, -50%);
+     z-index: 1;
+}
+#imgContainer img {
+    object-fit: cover;
+   
+    width: 100%;
+    height: 100%;
+    /* transform-origin: center; */
+    /* transform: rotateX(20deg) rotateY(20deg); */
+    transition: all linear .5s;
+}
+#brandContainer p {
+  
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+    font-weight: 900;
+    position: absolute;
+    display: block;
+    width: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2vw;
+    text-transform: uppercase;
+    z-index: 99;
+    top: 22%;
+    left: 50%;
+    mix-blend-mode: difference;
+    color: #fff;
+}
+.brand {
+   
+    display: flex;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    gap: 10px;
+    scrollbar-width: none;
+}
+.box {
+    text-transform: uppercase;
+    font-size: 5vw;
+    display: flex;
+    gap: 10px;
+    scrollbar-width: none;
+}
+.box h1 {
+    font-stretch: ultra-expanded;
+    scrollbar-width: none;
+    line-height: 8.5vw;
+}
+.box2 h1 {
+    -webkit-text-stroke: 4px black;
+    color: transparent;
+    position: relative;
+    z-index: 3;
+}
+#brand1 .box1 h1 {
+    overflow-y: hidden;
+    overflow-x: auto;
+    animation-name: brand1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#brand2 .box2 h1 {
+    overflow-y: hidden;
+    overflow-x: auto;
+    animation-name: brand2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#brand3 .box3 h1 {
+    overflow-y: hidden;
+    overflow-x: auto;
+    animation-name: brand3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes brand1 {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+@keyframes brand2 {
+    
+    to {
+        transform: translateX(0%);
+    }
+    from {
+        transform: translateX(-100%);
+    }
+    
+}
+@keyframes brand3 {
+    
+
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
