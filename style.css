@@ -56,7 +56,7 @@ html,body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 4px solid red;
+    /* border: 4px solid red; */
     position: absolute;
     top: 60%;
     left: 50%;
