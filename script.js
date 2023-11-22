@@ -1,19 +1,20 @@
-const imgage = document.querySelector("#imgContainer img");
+const container = document.querySelector("#imgContainer");
+const img = document.querySelector("#imgContainer img")
 const cursor = document.querySelector("#crsr");
 
 
-imgage.addEventListener("mousemove", (dets) => {
+container.addEventListener("mousemove", (dets) => {
     const x = dets.x / 20;
     const y = dets.y / 30;
     console.log(x);
     console.log(y);
 
-    imgage.style.transform = `rotateX(${x}deg) rotateY(${-y}deg)`
+    img.style.transform = `rotateX(${x}deg) rotateY(${-y}deg)`;
 })
 
-imgage.addEventListener("mousemove", (dets) => {
+container.addEventListener("mouseleave", (dets) => {
     setTimeout(() => {
-        imgage.style.transform = `rotateX(0deg) rotateY(0deg)`
-    }, 200);
+        img.style.transform = `rotateX(0deg) rotateY(0deg)`
+    }, 1000);
  
 });
